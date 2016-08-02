@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61F3FF81D509AEF00E99183 /* JenkinsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A61F3FF71D509AEF00E99183 /* JenkinsTestTests.m */; };
 		A6C5D2441D5057A600A14799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D2431D5057A600A14799 /* main.m */; };
 		A6C5D2471D5057A600A14799 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D2461D5057A600A14799 /* AppDelegate.m */; };
 		A6C5D24A1D5057A600A14799 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D2491D5057A600A14799 /* MasterViewController.m */; };
@@ -16,7 +17,20 @@
 		A6C5D2551D5057A600A14799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C5D2531D5057A600A14799 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A61F3FFA1D509AEF00E99183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6C5D2371D5057A500A14799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6C5D23E1D5057A500A14799;
+			remoteInfo = JenkinsTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A61F3FF51D509AEF00E99183 /* JenkinsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JenkinsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61F3FF71D509AEF00E99183 /* JenkinsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JenkinsTestTests.m; sourceTree = "<group>"; };
+		A61F3FF91D509AEF00E99183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6C5D23F1D5057A500A14799 /* JenkinsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C5D2431D5057A600A14799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6C5D2451D5057A600A14799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A61F3FF21D509AEF00E99183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C5D23C1D5057A500A14799 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A61F3FF61D509AEF00E99183 /* JenkinsTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				A61F3FF71D509AEF00E99183 /* JenkinsTestTests.m */,
+				A61F3FF91D509AEF00E99183 /* Info.plist */,
+			);
+			path = JenkinsTestTests;
+			sourceTree = "<group>";
+		};
 		A6C5D2361D5057A500A14799 = {
 			isa = PBXGroup;
 			children = (
 				A6C5D2411D5057A600A14799 /* JenkinsTest */,
+				A61F3FF61D509AEF00E99183 /* JenkinsTestTests */,
 				A6C5D2401D5057A500A14799 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				A6C5D23F1D5057A500A14799 /* JenkinsTest.app */,
+				A61F3FF51D509AEF00E99183 /* JenkinsTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +119,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A61F3FF41D509AEF00E99183 /* JenkinsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61F3FFC1D509AEF00E99183 /* Build configuration list for PBXNativeTarget "JenkinsTestTests" */;
+			buildPhases = (
+				A61F3FF11D509AEF00E99183 /* Sources */,
+				A61F3FF21D509AEF00E99183 /* Frameworks */,
+				A61F3FF31D509AEF00E99183 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61F3FFB1D509AEF00E99183 /* PBXTargetDependency */,
+			);
+			name = JenkinsTestTests;
+			productName = JenkinsTestTests;
+			productReference = A61F3FF51D509AEF00E99183 /* JenkinsTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A6C5D23E1D5057A500A14799 /* JenkinsTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6C5D2591D5057A600A14799 /* Build configuration list for PBXNativeTarget "JenkinsTest" */;
@@ -113,6 +163,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = jenkins;
 				TargetAttributes = {
+					A61F3FF41D509AEF00E99183 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A6C5D23E1D5057A500A14799;
+					};
 					A6C5D23E1D5057A500A14799 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = GM236AF94L;
@@ -133,11 +187,19 @@
 			projectRoot = "";
 			targets = (
 				A6C5D23E1D5057A500A14799 /* JenkinsTest */,
+				A61F3FF41D509AEF00E99183 /* JenkinsTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A61F3FF31D509AEF00E99183 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C5D23D1D5057A500A14799 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +213,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A61F3FF11D509AEF00E99183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61F3FF81D509AEF00E99183 /* JenkinsTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C5D23B1D5057A500A14799 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +233,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A61F3FFB1D509AEF00E99183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6C5D23E1D5057A500A14799 /* JenkinsTest */;
+			targetProxy = A61F3FFA1D509AEF00E99183 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A6C5D24E1D5057A600A14799 /* Main.storyboard */ = {
@@ -184,6 +262,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A61F3FFD1D509AEF00E99183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JenkinsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.JenkinsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JenkinsTest.app/JenkinsTest";
+			};
+			name = Debug;
+		};
+		A61F3FFE1D509AEF00E99183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = JenkinsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.JenkinsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JenkinsTest.app/JenkinsTest";
+			};
+			name = Release;
+		};
 		A6C5D2571D5057A600A14799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -301,6 +405,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A61F3FFC1D509AEF00E99183 /* Build configuration list for PBXNativeTarget "JenkinsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61F3FFD1D509AEF00E99183 /* Debug */,
+				A61F3FFE1D509AEF00E99183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A6C5D23A1D5057A500A14799 /* Build configuration list for PBXProject "JenkinsTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
